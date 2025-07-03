@@ -1,4 +1,3 @@
-import React from "react";
 import Container from "../Container";
 import Flex from "../Flex";
 import Image from "../Image";
@@ -6,6 +5,7 @@ import HeaderLogo from "../../assets/headerLogo.png";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import Heading from "../Heading";
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart    } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -18,8 +18,12 @@ const Header = () => {
           </div>
           <div className="m-auto">
             <ul className="flex items-center gap-x-15">
+              <Link to={"/"}>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Home</li>
+              </Link>
+              <Link to={"/shop"}>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Shop</li>
+              </Link>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">About</li>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Contact</li>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Journal</li>

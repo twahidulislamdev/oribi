@@ -1,10 +1,11 @@
-import React from 'react'
-import RootLayout from '../layout/RootLayout'
+import Banner from "../layout/Banner"
+import BasicInfo from "../layout/BasicInfo"
 
 const Home = () => {
   return (
     <>
-    <RootLayout/>
+    <Banner/>
+    <BasicInfo/>
     </>
   )
 }

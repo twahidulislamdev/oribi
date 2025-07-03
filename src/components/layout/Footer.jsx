@@ -9,7 +9,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
-      <div className="py-15 bg-[#F5F5F3] mt-5">
+      <div className="py-15 bg-[#F5F5F3]">
         <Container>
           <div className="flex justify-between">
             {/* First part start  */}
