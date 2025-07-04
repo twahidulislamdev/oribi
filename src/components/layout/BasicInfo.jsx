@@ -3,6 +3,7 @@ import Container from "../Container";
 import Flex from "../Flex";
 import Heading from "../Heading";
 import { FaTruck, FaUndoAlt } from "react-icons/fa";
+import { PiNumberTwoBold } from "react-icons/pi";
 
 const BasicInfo = () => {
   return (
@@ -10,7 +11,7 @@ const BasicInfo = () => {
       <Container>
         <Flex className={"justify-between"}>
           <div className="flex items-center space-x-2">
-            <Heading className={"text-xl font-medium"} txt={"2"} as={"h3"} />
+            <PiNumberTwoBold />
             <p className="text-base text-menuColor font-medium">
               Two years warranty
             </p>

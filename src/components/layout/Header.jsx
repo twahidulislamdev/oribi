@@ -10,11 +10,13 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-    <div className="py-8">
+    <div className="py-6">
       <Container>
         <Flex>
           <div className="">
+            <Link to={"/"}>
             <Image imgSrc={HeaderLogo} />
+            </Link>
           </div>
           <div className="m-auto">
             <ul className="flex items-center gap-x-15">
@@ -32,7 +34,7 @@ const Header = () => {
         </Flex>
       </Container>
     </div>
-    <div className="py-6 bg-[#F5F5F3]">
+    <div className="py-5 bg-[#F5F5F3]">
       <Container>
         <Flex className={"justify-between"}>
           <div className="">
