@@ -10,13 +10,11 @@ function App() {
     <>
       <Routes>
         {/* Wrap all routes with RootLayout */}
-        <Route path="/" element={<RootLayout/>}>
-          <Route path="/" element={<Home/>} /> 
-          <Route path="/shop" element={<Shop/>} /> 
-          <Route path="*" element={<Error/>} /> 
+        <Route path="/" element={<RootLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="*" element={<Error />} />
         </Route>
-
-        {/* Example: Separate route without the layout */}
       </Routes>
     </>
   );

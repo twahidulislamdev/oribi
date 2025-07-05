@@ -7,7 +7,7 @@ import { PiNumberTwoBold } from "react-icons/pi";
 
 const BasicInfo = () => {
   return (
-    <div className="py-5">
+    <div className="py-7">
       <Container>
         <Flex className={"justify-between"}>
           <div className="flex items-center space-x-2">
