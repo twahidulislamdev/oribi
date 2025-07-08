@@ -1,18 +1,18 @@
 import React from "react";
 import Container from "../Container";
 import Flex from "../Flex";
-import Image from "../Image";
-import AriveOne from "../../assets/ariveOne.png";
-import AriveTwo from "../../assets/ariveTwo.png";
-import AriveThree from "../../assets/ariveThree.png";
-import AriveFour from "../../assets/ariveFour.png";
-import AriveFive from "../../assets/ariveFive.png";
-import AriveSix from "../../assets/arivesix.png";
-import AriveSeven from "../../assets/ariveSeven.png";
-import AriveEight from "../../assets/ariveEight.png";
+import Image from '../Image';
+import AriveOne from '../../assets/ariveOne.png';
+import AriveTwo from '../../assets/ariveTwo.png';
+import AriveThree from '../../assets/ariveThree.png';
+import AriveFour from '../../assets/ariveFour.png';
+import AriveFive from '../../assets/ariveFive.png';
+import AriveSix from '../../assets/ariveSix.png'
+import AriveSeven from '../../assets/ariveSeven.png';
+import AriveEight from '../../assets/ariveEight.png';
 import Badge from "../Badge";
-import Heading from "../Heading";
-import Card from "../Card";
+import Heading from '../Heading';
+import Card from '../Card';
 
 const Arive = () => {
   return (
