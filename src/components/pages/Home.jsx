@@ -1,19 +1,19 @@
-import Ad from "../layout/Ad"
-import AdBanner from "../layout/AdBanner"
-import Banner from "../layout/Banner"
-import BasicInfo from "../layout/BasicInfo"
-import NewArive from "../layout/NewArive"
+import Ad from "../layout/Ad";
+import AnotherAd from "../layout/AnotherAd";
+import Arive from "../layout/Arive";
+import Banner from "../layout/Banner";
+import BasicInfo from "../layout/BasicInfo";
 
 const Home = () => {
   return (
     <>
-    <Banner/>
-    <BasicInfo/>
-    <Ad/>
-    <NewArive/>
-    <AdBanner/>
+      <Banner />
+      <BasicInfo />
+      <Ad />
+      <Arive />
+      <AnotherAd />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

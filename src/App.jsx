@@ -11,7 +11,6 @@ function App() {
   return (
     <>
       <Routes>
-        {/* Wrap all routes with RootLayout */}
         <Route path="/" element={<RootLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />

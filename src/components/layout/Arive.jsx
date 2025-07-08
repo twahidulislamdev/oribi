@@ -14,7 +14,7 @@ import Badge from "../Badge";
 import Heading from "../Heading";
 import Card from "../Card";
 
-const NewArive = () => {
+const Arive = () => {
   return (
     <div className="mt-15">
       <Container>
@@ -86,4 +86,4 @@ const NewArive = () => {
   );
 };
 
-export default NewArive;
+export default Arive;
