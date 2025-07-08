@@ -12,9 +12,9 @@ import AriveSeven from '../../assets/ariveSeven.png';
 import AriveEight from '../../assets/ariveEight.png';
 import Badge from "../Badge";
 import Heading from '../Heading';
-import Card from '../Card';
+import Product from "../Product";
 
-const Arive = () => {
+const ProductPart = () => {
   return (
     <div className="mt-15">
       <Container>
@@ -24,56 +24,56 @@ const Arive = () => {
           as={"h3"}
         />
         <Flex className={"mt-10 justify-between flex-wrap gap-y-15"}>
-          <Card
+          <Product
             className={""}
             imgSrc={AriveOne}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveTwo}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveThree}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveFour}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveFive}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveSix}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveSeven}
             pTxt={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
-          <Card
+          <Product
             className={""}
             imgSrc={AriveEight}
             pTxt={"Basic Crew Neck Tee"}
@@ -83,7 +83,7 @@ const Arive = () => {
         </Flex>
       </Container>
     </div>
-  );
-};
+  )
+}
 
-export default Arive;
+export default ProductPart

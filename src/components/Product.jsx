@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 import Badge from "./Badge";
 
-const Card = ({ className, pTxt, h5Txt, h6Txt, imgSrc, imgAlt }) => {
+const Product = ({ className, pTxt, h5Txt, h6Txt, imgSrc, imgAlt }) => {
   return (
     <div className={`w-[23%] hover:shadow-lg rounded-lg relative ${className}`}>
       <div className="">
@@ -14,7 +14,7 @@ const Card = ({ className, pTxt, h5Txt, h6Txt, imgSrc, imgAlt }) => {
       </div>
       <h6 className={`text-sm text-[#767676] px-5 pb-10 pt-3 ${className}`}>{h6Txt}</h6>
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Product

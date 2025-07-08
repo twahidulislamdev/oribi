@@ -1,8 +1,8 @@
 import Ad from "../layout/Ad";
 import AnotherAd from "../layout/AnotherAd";
-import Arive from "../layout/Arive";
 import Banner from "../layout/Banner";
 import BasicInfo from "../layout/BasicInfo";
+import ProductPart from "../layout/ProductPart";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <Banner />
       <BasicInfo />
       <Ad />
-      <Arive />
+      <ProductPart/>
       <AnotherAd />
     </>
   );
