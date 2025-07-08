@@ -26,8 +26,12 @@ const Header = () => {
               <Link to={"/shop"}>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Shop</li>
               </Link>
+              <Link to={"/about"}>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">About</li>
+              </Link>
+              <Link to={"/contacts"}>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Contact</li>
+              </Link>
               <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">Journal</li>
             </ul>
           </div>

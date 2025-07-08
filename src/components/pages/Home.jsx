@@ -1,6 +1,7 @@
 import Ad from "../layout/Ad"
 import Banner from "../layout/Banner"
 import BasicInfo from "../layout/BasicInfo"
+import NewArive from "../layout/NewArive"
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
     <Banner/>
     <BasicInfo/>
     <Ad/>
+    <NewArive/>
     </>
   )
 }
