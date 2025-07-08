@@ -27,56 +27,56 @@ const ProductPart = () => {
           <Product
             className={""}
             imgSrc={AriveOne}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveTwo}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveThree}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveFour}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveFive}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveSix}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveSeven}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
           <Product
             className={""}
             imgSrc={AriveEight}
-            pTxt={"Basic Crew Neck Tee"}
+            title={"Basic Crew Neck Tee"}
             h5Txt={"$44.00"}
             h6Txt={"Black"}
           />
