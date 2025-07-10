@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const AnotherAd = () => {
   return (
-    <div className="mt-10">
+    <div className="mt-15">
       <Container>
         <Link to={"/shop"}>
           <Image className={""} imgSrc={AddBanner} imgAlt={"Ad Image"} />
