@@ -13,7 +13,9 @@ const Home = () => {
       <BasicInfo />
       <Ad />
       <NewArrvial/>
+      <BestSelling/>
       <AnotherAd />
+      <SpecialOffers/>
     </>
   );
 };

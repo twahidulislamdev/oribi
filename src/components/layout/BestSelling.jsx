@@ -1,91 +1,98 @@
+import React from "react";
 import Container from "../Container";
 import Flex from "../Flex";
-import Image from '../Image';
-import AriveFive from '../../assets/ariveFive.png';
-import AriveSix from '../../assets/ariveSix.png'
-import AriveSeven from '../../assets/ariveSeven.png';
-import AriveEight from '../../assets/ariveEight.png';
-import AriveTwelve from '../../assets/ariveTwelve.png';
-import Badge from "../Badge";
-import Heading from '../Heading';
 import Product from "../Product";
+import AriveOne from "../../assets/ariveOne.png";
+import AriveTwo from "../../assets/ariveTwo.png";
+import AriveThree from "../../assets/ariveThree.png";
+import AriveFour from "../../assets/ariveFour.png";
+import AriveNine from "../../assets/ariveNine.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import NextArrow from "../NextArrow";
+import PrevArrow from "../PrevArrow";
 
 const BestSelling = () => {
-   var settings = {
-    dots: true,
+  var settings = {
+    dots: false,
     infinite: true,
-    speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,        
-    autoplaySpeed: 2000,   
-    arrows: false, 
-    nextArrow: 'ttttttt',
-    prevArrow: 'ttettet',
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 3500,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
   return (
     <>
-      <div className=" mt-15">
+      <div className="mt-15">
         <Container>
-          <Heading
-            className={"text-[35px] font-bold"}
-            txt={"New Arives"}
-            as={"h3"}
-          />
-            <Slider className="mt-10" {...settings}>
+          <div className="pb-10 text-[35px] font-bold">Best Selling</div>
+          <div className="relative ">
+            <Slider className="" {...settings}>
               <div className="">
                 <Product
                   className={""}
-                  imgSrc={AriveTwelve}
+                  imgSrc={AriveOne}
+                  imgAlt={"Arive One"}
+                  text={"New"}
                   title={"Basic Crew Neck Tee"}
-                  h5Txt={"$44.00"}
-                  h6Txt={"Black"}
-                />
-              </div>
-              <div className="">
-                <Product
-                  className={""}
-                  imgSrc={AriveFive}
-                  title={"Basic Crew Neck Tee"}
-                  h5Txt={"$44.00"}
-                  h6Txt={"Black"}
+                  price={"$44.00"}
+                  productColor={"Black"}
                 />
               </div>
               <div>
                 <Product
                   className={""}
-                  imgSrc={AriveSix}
+                  imgSrc={AriveTwo}
+                  imgAlt={"Arive One"}
+                  text={"New"}
                   title={"Basic Crew Neck Tee"}
-                  h5Txt={"$44.00"}
-                  h6Txt={"Black"}
+                  price={"$44.00"}
+                  productColor={"Black"}
                 />
               </div>
               <div>
                 <Product
                   className={""}
-                  imgSrc={AriveSeven}
+                  imgSrc={AriveThree}
+                  imgAlt={"Arive One"}
+                  text={"New"}
                   title={"Basic Crew Neck Tee"}
-                  h5Txt={"$44.00"}
-                  h6Txt={"Black"}
+                  price={"$44.00"}
+                  productColor={"Black"}
                 />
               </div>
-              <div className="">
+              <div>
                 <Product
                   className={""}
-                  imgSrc={AriveEight}
+                  imgSrc={AriveFour}
+                  imgAlt={"Arive One"}
+                  text={"New"}
                   title={"Basic Crew Neck Tee"}
-                  h5Txt={"$44.00"}
-                  h6Txt={"Black"}
+                  price={"$44.00"}
+                  productColor={"Black"}
+                />
+              </div>
+              <div>
+                <Product
+                  className={""}
+                  imgSrc={AriveNine}
+                  imgAlt={"Arive One"}
+                  text={"New"}
+                  title={"Basic Crew Neck Tee"}
+                  price={"$44.00"}
+                  productColor={"Black"}
                 />
               </div>
             </Slider>
+          </div>
         </Container>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default BestSelling
+export default BestSelling;
