@@ -1,56 +1,59 @@
+import React from "react";
 import Container from "../Container";
 import Flex from "../Flex";
-import Image from '../Image';
-import AriveOne from '../../assets/ariveOne.png';
-import AriveTwo from '../../assets/ariveTwo.png';
-import AriveThree from '../../assets/ariveThree.png';
-import AriveFour from '../../assets/ariveFour.png';
-import Badge from "../Badge";
-import Heading from '../Heading';
 import Product from "../Product";
+import AriveOne from "../../assets/ariveOne.png";
 
 const NewArrvial = () => {
   return (
-    <div className="mt-15">
-      <Container>
-        <Heading
-          className={"text-[35px] font-bold"}
-          txt={"New Arives"}
-          as={"h3"}
-        />
-        <Flex className={"mt-10 justify-between flex-wrap gap-y-15"}>
-          <Product
-            className={""}
-            imgSrc={AriveOne}
-            title={"Basic Crew Neck Tee"}
-            h5Txt={"$44.00"}
-            h6Txt={"Black"}
-          />
-          <Product
-            className={""}
-            imgSrc={AriveTwo}
-            title={"Basic Crew Neck Tee"}
-            h5Txt={"$44.00"}
-            h6Txt={"Black"}
-          />
-          <Product
-            className={""}
-            imgSrc={AriveThree}
-            title={"Basic Crew Neck Tee"}
-            h5Txt={"$44.00"}
-            h6Txt={"Black"}
-          />
-          <Product
-            className={""}
-            imgSrc={AriveFour}
-            title={"Basic Crew Neck Tee"}
-            h5Txt={"$44.00"}
-            h6Txt={"Black"}
-          />
-        </Flex>
-      </Container>
-    </div>
-  )
-}
+    <>
+      <div className="mt-10">
+        <Container>
+          <div className=""></div>
+          <div className="">
+            <Flex className={"justify-between"}>
+              <Product
+                className={""}
+                imgSrc={AriveOne}
+                imgAlt={"Arive One"}
+                text={"New"}
+                title={"Basic Crew Neck Tee"}
+                price={"$44.00"}
+                productColor={"Black"}
+              />
+              <Product
+                className={""}
+                imgSrc={AriveOne}
+                imgAlt={"Arive One"}
+                text={"New"}
+                title={"Basic Crew Neck Tee"}
+                price={"$44.00"}
+                productColor={"Black"}
+              />
+              <Product
+                className={""}
+                imgSrc={AriveOne}
+                imgAlt={"Arive One"}
+                text={"New"}
+                title={"Basic Crew Neck Tee"}
+                price={"$44.00"}
+                productColor={"Black"}
+              />
+              <Product
+                className={""}
+                imgSrc={AriveOne}
+                imgAlt={"Arive One"}
+                text={"New"}
+                title={"Basic Crew Neck Tee"}
+                price={"$44.00"}
+                productColor={"Black"}
+              />
+            </Flex>
+          </div>
+        </Container>
+      </div>
+    </>
+  );
+};
 
-export default NewArrvial
+export default NewArrvial;
