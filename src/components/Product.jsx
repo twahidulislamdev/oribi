@@ -7,7 +7,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Product = ({ imgSrc, imgAlt, text, title, price, productColor }) => {
   return (
     <>
-      <div className="relative group border-2 border-gray-200">
+      <div className="mx-3 relative group border-2 border-gray-200">
         <img src={imgSrc} alt={imgAlt} />
         <Badge className={"absolute top-5 left-5"} badgeText={text} />
         <div className="bg-white p-7.5 space-y-3 absolute bottom-22 left-0 w-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
