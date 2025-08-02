@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { FiPlus } from "react-icons/fi";
-import { FiMinus } from "react-icons/fi";
+import { IoMdArrowDropup } from "react-icons/io";
 
 const ShopProductCatagory = () => {
   const [expand, setExpand] = useState(true);
@@ -9,19 +8,19 @@ const ShopProductCatagory = () => {
       <div className="">
         <div className={"flex justify-between items-center "}>
           <h5 className="text-xl font-bold">Shop by Category</h5>
-          <FiPlus
+          <IoMdArrowDropup
             onClick={() => setExpand(!expand)}
-            className={`text-xl text-mainColor cursor-pointer mr-10 ${
-            expand ? <FiPlus/> : <FiMinus/>} `}
+            className={`text-2xl text-mainColor cursor-pointer mr-10 ${
+            expand ? "rotate-180" : ""} `}
           />
         </div>
         {expand && (
-          <ul className="mt-5 space-y-3">
-            <li className="text-base text-menuColor">Catagory 1</li>
-            <li className="text-base text-menuColor">Catagory 2</li>
-            <li className="text-base text-menuColor">Catagory 3</li>
-            <li className="text-base text-menuColor">Catagory 4</li>
-            <li className="text-base text-menuColor">Catagory 5</li>
+          <ul className="mt-5 mr-10">
+            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Catagory 1</li>
+            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Catagory 2</li>
+            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Catagory 3</li>
+            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Catagory 4</li>
+            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Catagory 5</li>
           </ul>
         )}
       </div>
