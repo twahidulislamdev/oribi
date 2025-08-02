@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { IoMdArrowDropup } from "react-icons/io";
 const ShopProductPrice = () => {
-      const [expand, setExpand] = useState(true);
+      const [expand, setExpand] = useState(false);
   return (
      <>
       <div className="mt-10">
         <div className={"flex justify-between items-center "}>
-          <h5 className="text-xl font-bold">Shop by Brand</h5>
+          <h5 className="text-xl font-bold">Shop by Price</h5>
           <IoMdArrowDropup
             onClick={() => setExpand(!expand)}
             className={`text-2xl text-mainColor cursor-pointer mr-10 ${

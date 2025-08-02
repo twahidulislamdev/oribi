@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoMdArrowDropup } from "react-icons/io";
 
 const ShopProductBrand = () => {
-  const [expand, setExpand] = useState(true);
+  const [expand, setExpand] = useState(false);
   return (
     <>
       <div className="mt-10">
