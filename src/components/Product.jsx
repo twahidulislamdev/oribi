@@ -32,6 +32,7 @@ const Product = ({ imgSrc, imgAlt, text, title, price, productColor }) => {
           <p className="text-[#767676] text-base font-bold pt-2">
             {productColor}
           </p>
+          
         </div>
       </div>
     </>

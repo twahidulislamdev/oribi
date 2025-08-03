@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
 import ShopProductCatagory from "../ShopProductCatagory";
@@ -7,15 +7,24 @@ import ShopProductBrand from "../ShopProductBrand";
 import ShopProductPrice from "../ShopProductPrice";
 import ShopProductSortBy from "../ShopProductSortBy";
 import ShopProductShow from "../ShopProductShow";
-
 import AriveOne from "../../assets/ariveOne.png";
 import AriveTwo from "../../assets/ariveTwo.png";
 import AriveThree from "../../assets/ariveThree.png";
 import AriveFour from "../../assets/ariveFour.png";
 import AriveNine from "../../assets/ariveNine.png";
 import ShopProduct from "../ShopProduct";
+import axios from "axios";
 
 const Shop = () => {
+  const [myProduct, setMyProdyct] = useState([]);
+  useEffect(() => {
+    async function allDatas() {
+      let data = await axios.get("https://dummyjson.com/products?limit=30");
+      setMyProdyct(data.data.products);
+      console.log(data);
+    }
+    allDatas();
+  }, []);
   return (
     <>
       <div className="">
@@ -41,58 +50,22 @@ const Shop = () => {
                 <ShopProductShow />
               </Flex>
               {/* Shop Product part Start  */}
-              <div className="mt-15">
+              <div className="mt-5">
                 <Container>
-                  <div className="pb-10 text-[35px] font-bold">
-                    New Arrivals
-                  </div>
                   <div className=" relative ">
                     <Flex className={"justify-between flex-wrap gap-y-5"}>
-                      <ShopProduct
-                        className={""}
-                        imgSrc={AriveOne}
-                        imgAlt={"Arive One"}
-                        text={"New"}
-                        title={"Basic Crew Neck Tee"}
-                        price={"$44.00"}
-                        productColor={"Black"}
-                      />
-                      <ShopProduct
-                        className={""}
-                        imgSrc={AriveTwo}
-                        imgAlt={"Arive One"}
-                        text={"New"}
-                        title={"Basic Crew Neck Tee"}
-                        price={"$44.00"}
-                        productColor={"Black"}
-                      />
-                      <ShopProduct
-                        className={""}
-                        imgSrc={AriveThree}
-                        imgAlt={"Arive One"}
-                        text={"New"}
-                        title={"Basic Crew Neck Tee"}
-                        price={"$44.00"}
-                        productColor={"Black"}
-                      />
-                      <ShopProduct
-                        className={""}
-                        imgSrc={AriveFour}
-                        imgAlt={"Arive One"}
-                        text={"New"}
-                        title={"Basic Crew Neck Tee"}
-                        price={"$44.00"}
-                        productColor={"Black"}
-                      />
-                      <ShopProduct
-                        className={""}
-                        imgSrc={AriveNine}
-                        imgAlt={"Arive One"}
-                        text={"New"}
-                        title={"Basic Crew Neck Tee"}
-                        price={"$44.00"}
-                        productColor={"Black"}
-                      />
+                      {myProduct.map((item) => (
+                        <ShopProduct
+                          className={""}
+                          title={item.title}
+                          price={item.price}
+                          imgSrc={item.images}
+                          imgAlt={"Arive One"}
+                          text={"New"}
+                          brand={item.brand	}
+                          category={item.category	}
+                        />
+                      ))}
                     </Flex>
                   </div>
                 </Container>
