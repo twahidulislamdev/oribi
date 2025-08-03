@@ -5,6 +5,8 @@ import ShopProductCatagory from "../ShopProductCatagory";
 import ShopProductColor from "../ShopProductColor";
 import ShopProductBrand from "../ShopProductBrand";
 import ShopProductPrice from "../ShopProductPrice";
+import ShopProductSortBy from "../ShopProductSortBy";
+import ShopProductShow from "../ShopProductShow";
 
 const Shop = () => {
   return (
@@ -18,14 +20,15 @@ const Shop = () => {
           <Flex className={"justify-between"}>
             <div className="w-[30%]">
               <ShopProductCatagory />
-              <ShopProductColor/>
-              <ShopProductBrand/>
-              <ShopProductPrice/>
+              <ShopProductColor />
+              <ShopProductBrand />
+              <ShopProductPrice />
             </div>
             <div className="w-[70%]">
-              <div className="">
-                
-              </div>
+              <Flex className={"justify-end gap-x-10"}>
+                <ShopProductSortBy />
+                <ShopProductShow />
+              </Flex>
             </div>
           </Flex>
         </Container>

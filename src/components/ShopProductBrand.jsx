@@ -16,12 +16,12 @@ const ShopProductBrand = () => {
           />
         </div>
         {expand && (
-          <ul className="mt-5 mr-10">
-            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Brand 1</li>
-            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Brand 2</li>
-            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Brand 3</li>
-            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Brand 4</li>
-            <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">Brand 5</li>
+          <ul className="mt-3 mr-10">
+            <li className="text-base text-menuColor py-3 border-b-2 border-gray-100">Brand 1</li>
+            <li className="text-base text-menuColor py-3 border-b-2 border-gray-100">Brand 2</li>
+            <li className="text-base text-menuColor py-3 border-b-2 border-gray-100">Brand 3</li>
+            <li className="text-base text-menuColor py-3 border-b-2 border-gray-100">Brand 4</li>
+            <li className="text-base text-menuColor py-3 border-b-2 border-gray-100">Brand 5</li>
           </ul>
         )}
       </div>

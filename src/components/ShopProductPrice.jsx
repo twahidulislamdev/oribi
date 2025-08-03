@@ -15,7 +15,7 @@ const ShopProductPrice = () => {
           />
         </div>
         {expand && (
-          <ul className="mt-5 mr-10">
+          <ul className="mt-3 mr-10">
             <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">$0.00 - $9.99</li>
             <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">$10.00 - $19.99</li>
             <li className="text-base text-menuColor py-5 border-b-2 border-gray-100">$20.00 - $29.99</li>
