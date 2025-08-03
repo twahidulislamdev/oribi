@@ -19,7 +19,7 @@ const Shop = () => {
   const [myProduct, setMyProdyct] = useState([]);
   useEffect(() => {
     async function allDatas() {
-      let data = await axios.get("https://dummyjson.com/products?limit=30");
+      let data = await axios.get("https://dummyjson.com/products?limit=40");
       setMyProdyct(data.data.products);
       console.log(data);
     }
