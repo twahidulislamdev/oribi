@@ -4,10 +4,12 @@ import Image from "../Image";
 import HeaderLogo from "../../assets/headerLogo.png";
 import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 import Heading from "../Heading";
-import { FaSearch, FaUser, FaCaretDown, FaShoppingCart } from "react-icons/fa";
+import { FaSearch, FaUser, FaCaretUp, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [isExpand, setExpand] = useState(false);
   return (
     <>
       <div className="py-6">
@@ -53,13 +55,14 @@ const Header = () => {
           <Flex className={"justify-between"}>
             <div className="">
               <Flex className={"gap-x-3"}>
-                <HiMiniBars3BottomLeft className="text-lg " />
+                <HiMiniBars3BottomLeft className="text-lg" />
                 <Heading
                   className={"text-sm text-[#262626] "}
                   txt={"Shop by Category"}
                   as={"h4"}
                 />
               </Flex>
+              
             </div>
             <div className="flex relative">
               <input
@@ -69,14 +72,29 @@ const Header = () => {
               />
               <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2" />
             </div>
-            <div className="">
+            <div className="relative">
               <Flex className={"gap-x-3"}>
-                <Flex>
-                  <FaUser />
-                  <FaCaretDown />
-                </Flex>
+                <div className="">
+                  <Flex className={"gap-x-1"}>
+                    <FaUser />
+                    <FaCaretUp
+                      onClick={() => setExpand(!isExpand)}
+                      className={`${isExpand ? "rotate-180" : ""}`}
+                    />
+                  </Flex>
+                </div>
                 <FaShoppingCart />
               </Flex>
+              {isExpand && (
+                <div className="w-[100px] bg-amber-100 absolute mt-2 Right-30 ">
+                  <button className="w-full bg-black text-center py-1.5 text-white border-b-1 border-white ">
+                    Login
+                  </button>
+                  <button className="w-full bg-black text-center py-1.5 text-white ">
+                    Log Out
+                  </button>
+                </div>
+              )}
             </div>
           </Flex>
         </Container>

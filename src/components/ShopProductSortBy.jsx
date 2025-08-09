@@ -4,10 +4,14 @@ import Flex from "./Flex";
 
 const ShopProductSortBy = () => {
   const [isExpand, setExpand] = useState(false);
+  const handleItemClick = (item) => {
+    console.log(`Clicked: ${item}`);
+    setExpand(false);
+  };
   return (
     <>
       <div className="">
-        <div className={"flex  "}>
+        <div className={"flex"}>
           <h5 className="text-base mr-10 text-menuColor">Sort By: </h5>
           <Flex className={"gap-x-5"}>
             <h5 className="text-base text-menuColor">Future </h5>
@@ -20,14 +24,37 @@ const ShopProductSortBy = () => {
           </Flex>
         </div>
         {isExpand && (
-          <div className="shadow-lg rounded-lg w-[180px]">
-            <ul className="mt-3 ">
-            <li className="text-base text-menuColor py-3 text-center ">Catagory 1</li>
-            <li className="text-base text-menuColor py-3 text-center ">Catagory 2</li>
-            <li className="text-base text-menuColor py-3 text-center ">Catagory 3</li>
-            <li className="text-base text-menuColor py-3 text-center ">Catagory 4</li>
-            <li className="text-base text-menuColor py-3 text-center ">Catagory 5</li>
-          </ul>
+          <div className=" shadow-lg rounded-lg w-[180px]">
+            <button
+              onClick={() => handleItemClick("Profile")}
+              className="flex items-center w-full px-4 text-base text-menuColor py-3 text-center hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            >
+              Catagory 1
+            </button>
+            <button
+              onClick={() => handleItemClick("Profile")}
+              className="flex items-center w-full px-4 text-base text-menuColor py-3 text-center hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            >
+              Catagory 2
+            </button>
+            <button
+              onClick={() => handleItemClick("Profile")}
+              className="flex items-center w-full px-4 text-base text-menuColor py-3 text-center hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            >
+              Catagory 3
+            </button>
+            <button
+              onClick={() => handleItemClick("Profile")}
+              className="flex items-center w-full px-4 text-base text-menuColor py-3 text-center hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            >
+              Catagory 4
+            </button>
+            <button
+              onClick={() => handleItemClick("Profile")}
+              className="flex items-center w-full px-4 text-base text-menuColor py-3 text-center hover:bg-gray-100 hover:text-gray-900 transition-colors duration-150"
+            >
+              Catagory 5
+            </button>
           </div>
         )}
       </div>

@@ -12,12 +12,10 @@ const ShopProductShow = () => {
             <li className="text-base text-menuColor">3</li>
             <li className="text-base text-menuColor">4</li>
           </ul>
-         
         </div>
-        
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ShopProductShow
+export default ShopProductShow;
