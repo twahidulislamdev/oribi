@@ -9,7 +9,16 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
+  const [extend, setExtend] = useState(false);
   const [isExpand, setExpand] = useState(false);
+  const handleBarClick = (item) => {
+    console.log(`Clicked: ${item}`);
+    setExtend(false);
+  };
+  const handleLoginClick = (item) => {
+    console.log(`Clicked: ${item}`);
+    setExpand(false);
+  };
   return (
     <>
       <div className="py-6">
@@ -53,16 +62,40 @@ const Header = () => {
       <div className="py-5 bg-[#F5F5F3]">
         <Container>
           <Flex className={"justify-between"}>
-            <div className="">
+            <div className="relative">
               <Flex className={"gap-x-3"}>
-                <HiMiniBars3BottomLeft className="text-lg" />
+                <HiMiniBars3BottomLeft
+                  onClick={() => setExtend(!extend)}
+                  className="text-lg hover:cursor-pointer"
+                />
                 <Heading
                   className={"text-sm text-[#262626] "}
                   txt={"Shop by Category"}
                   as={"h4"}
                 />
               </Flex>
-              
+              {extend && (
+                <div className=" shadow-lg rounded-lg w-[150px] mt-3 bg-black absolute">
+                  <button
+                    onClick={() => handleBarClick("Profile")}
+                    className="flex items-center w-full px-4 text-base text-white py-3 text-center   transition-colors duration-150 hover:cursor-pointer border-1 border-gray-800 "
+                  >
+                    Catagory 1
+                  </button>
+                  <button
+                    onClick={() => handleBarClick("Profile")}
+                    className="flex items-center w-full px-4 text-base text-white py-3 text-center  transition-colors duration-150 hover:cursor-pointer border-1 border-gray-800 "
+                  >
+                    Catagory 2
+                  </button>
+                  <button
+                    onClick={() => handleBarClick("Profile")}
+                    className="flex items-center w-full px-4 text-base text-white py-3 text-center  transition-colors duration-150 hover:cursor-pointer "
+                  >
+                    Catagory 3
+                  </button>
+                </div>
+              )}
             </div>
             <div className="flex relative">
               <input
@@ -72,6 +105,7 @@ const Header = () => {
               />
               <FaSearch className="absolute right-4 top-1/2 -translate-y-1/2" />
             </div>
+            {/* Login and Log out Section Start  */}
             <div className="relative">
               <Flex className={"gap-x-3"}>
                 <div className="">
@@ -87,15 +121,22 @@ const Header = () => {
               </Flex>
               {isExpand && (
                 <div className="w-[100px] bg-amber-100 absolute mt-2 Right-30 ">
-                  <button className="w-full bg-black text-center py-1.5 text-white border-b-1 border-white ">
+                  <button
+                    onClick={() => handleLoginClick("Profile")}
+                    className="w-full bg-black text-center py-1.5 text-white border-b-1 hover:cursor-pointer border-gray-800 "
+                  >
                     Login
                   </button>
-                  <button className="w-full bg-black text-center py-1.5 text-white ">
+                  <button
+                    onClick={() => handleLoginClick("Profile")}
+                    className="w-full bg-black text-center py-1.5 hover:cursor-pointer text-white "
+                  >
                     Log Out
                   </button>
                 </div>
               )}
             </div>
+            {/* Login and Log out Section Start  */}
           </Flex>
         </Container>
       </div>
