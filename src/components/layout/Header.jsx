@@ -51,6 +51,11 @@ const Header = () => {
                     Contact
                   </li>
                 </Link>
+                <Link to={"/quickview"}>
+                  <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">
+                    Quick View
+                  </li>
+                </Link>
                 <li className="text-base text-menuColor hover:text-black font-medium hover:cursor-pointer duration-300 delay-150 ">
                   Journal
                 </li>
@@ -78,13 +83,13 @@ const Header = () => {
                 <div className=" shadow-lg rounded-lg w-[150px] mt-3 bg-black absolute">
                   <button
                     onClick={() => handleBarClick("Profile")}
-                    className="flex items-center w-full px-4 text-base text-white py-3 text-center   transition-colors duration-150 hover:cursor-pointer border-1 border-gray-800 "
+                    className="flex items-center w-full px-4 text-base text-white py-3 text-center   transition-colors duration-150 hover:cursor-pointer border-1 border-gray-500 "
                   >
                     Catagory 1
                   </button>
                   <button
                     onClick={() => handleBarClick("Profile")}
-                    className="flex items-center w-full px-4 text-base text-white py-3 text-center  transition-colors duration-150 hover:cursor-pointer border-1 border-gray-800 "
+                    className="flex items-center w-full px-4 text-base text-white py-3 text-center  transition-colors duration-150 hover:cursor-pointer border-1 border-gray-500 "
                   >
                     Catagory 2
                   </button>
@@ -123,7 +128,7 @@ const Header = () => {
                 <div className="w-[100px] bg-amber-100 absolute mt-2 Right-30 ">
                   <button
                     onClick={() => handleLoginClick("Profile")}
-                    className="w-full bg-black text-center py-1.5 text-white border-b-1 hover:cursor-pointer border-gray-800 "
+                    className="w-full bg-black text-center py-1.5 text-white border-b-1 hover:cursor-pointer border-gray-500 "
                   >
                     Login
                   </button>

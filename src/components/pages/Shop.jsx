@@ -14,6 +14,7 @@ import AriveFour from "../../assets/ariveFour.png";
 import AriveNine from "../../assets/ariveNine.png";
 import ShopProduct from "../ShopProduct";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   const [myProduct, setMyProdyct] = useState([]);
@@ -55,7 +56,7 @@ const Shop = () => {
                   <div className=" relative ">
                     <Flex className={"justify-between flex-wrap gap-y-5"}>
                       {myProduct.map((item) => (
-                        <ShopProduct
+                          <ShopProduct
                           className={""}
                           title={item.title}
                           price={item.price}
