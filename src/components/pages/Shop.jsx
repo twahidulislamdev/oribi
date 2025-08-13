@@ -20,9 +20,9 @@ const Shop = () => {
   const [myProduct, setMyProdyct] = useState([]);
   useEffect(() => {
     async function allDatas() {
-      let data = await axios.get("https://dummyjson.com/products?limit=40");
-      setMyProdyct(data.data.products);
-      console.log(data);
+      let data = await axios.get("https://twahidulislamdev.github.io/product-aip/data/products/index.json");
+      setMyProdyct(data.data.data);
+      console.log(data.data.data);
     }
     allDatas();
   }, []);
@@ -60,7 +60,7 @@ const Shop = () => {
                           className={""}
                           title={item.title}
                           price={item.price}
-                          imgSrc={item.images}
+                          imgSrc={item.image}
                           imgAlt={"Arive One"}
                           text={"New"}
                           brand={item.brand	}

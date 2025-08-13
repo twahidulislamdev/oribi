@@ -18,8 +18,8 @@ const ShopProduct = ({
     <>
       <div className="w-[32%]  relative group border-2 border-gray-200">
         <img src={imgSrc} alt={imgAlt} />
-        <Badge className={"absolute top-5 left-5"} badgeText={text} />
-        <div className="bg-white p-7.5 space-y-3 absolute bottom-27 left-0 w-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
+        <Badge className={"absolute top-2 left-2"} badgeText={text} />
+        <div className="bg-white p-7.5 space-y-3 absolute bottom-22 left-0 w-full opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out">
           <Flex className={"justify-end gap-x-2"}>
             <p className="text-sm">Add to Wish List</p>
             <FaHeart />

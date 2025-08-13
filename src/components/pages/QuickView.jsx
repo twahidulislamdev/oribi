@@ -46,7 +46,22 @@ const QuickView = () => {
                 </div>
               </Flex>
             </div>
-            <div className="w-[48%] border-1 border-gray-300 rounded-lg"></div>
+            <div className="w-[48%] border-1 border-gray-300 rounded-lg p-5">
+              {/* Brand Name and add to compayer part start  */}
+              <Flex className={"justify-between items-center"}>
+                <p className="text-lg text-sky-700 font-semibold">Samsung</p>
+                <div className="">
+                  <p className="text-lg text-amber-500 font-semibold">
+                    Add to Campeyer
+                  </p>
+                </div>
+              </Flex>
+              {/* Brand Name and add to compayer part End  */}
+              <h3 className="text-3xl font-bold mt-5">Galaxy S25 Ultra 5G</h3>
+              <Flex>
+                <h5 className="text-xl font-semibold mt-3"> <span className="text-2xl">Price :</span> <span><del>10%</del></span></h5>
+              </Flex>
+            </div>
           </Flex>
         </Container>
       </div>
