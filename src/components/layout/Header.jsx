@@ -11,12 +11,12 @@ import { useState } from "react";
 const Header = () => {
   const [extend, setExtend] = useState(false);
   const [isExpand, setExpand] = useState(false);
-  const handleBarClick = (item) => {
-    console.log(`Clicked: ${item}`);
+  const handleBarClick = () => {
+    // console.log(`Clicked: ${item}`);
     setExtend(false);
   };
-  const handleLoginClick = (item) => {
-    console.log(`Clicked: ${item}`);
+  const handleLoginClick = () => {
+    // console.log(`Clicked: ${item}`);
     setExpand(false);
   };
   return (
@@ -115,10 +115,12 @@ const Header = () => {
               <Flex className={"gap-x-3"}>
                 <div className="">
                   <Flex className={"gap-x-1"}>
-                    <FaUser />
+                    <FaUser onClick={() => setExpand(!isExpand)} />
                     <FaCaretUp
                       onClick={() => setExpand(!isExpand)}
-                      className={`${isExpand ? "rotate-180" : ""}`}
+                      className={`hover:cursor-pointer ${
+                        isExpand ? "rotate-180" : ""
+                      }`}
                     />
                   </Flex>
                 </div>

@@ -6,7 +6,6 @@ import ShopProductColor from "../ShopProductColor";
 import ShopProductBrand from "../ShopProductBrand";
 import ShopProductPrice from "../ShopProductPrice";
 import ShopProductSortBy from "../ShopProductSortBy";
-import ShopProductShow from "../ShopProductShow";
 import AriveOne from "../../assets/ariveOne.png";
 import AriveTwo from "../../assets/ariveTwo.png";
 import AriveThree from "../../assets/ariveThree.png";
@@ -20,9 +19,11 @@ const Shop = () => {
   const [myProduct, setMyProdyct] = useState([]);
   useEffect(() => {
     async function allDatas() {
-      let data = await axios.get("https://twahidulislamdev.github.io/product-aip/data/products/index.json");
-      setMyProdyct(data.data.data);
-      console.log(data.data.data);
+      let data = await axios.get(
+        "https://twahidulislamdev.github.io/product-aip/data/products/index.json"
+      );
+      setMyProdyct(data.data.products);
+      // console.log(data.data.products);
     }
     allDatas();
   }, []);
@@ -48,26 +49,28 @@ const Shop = () => {
             <div className="w-[70%]">
               <Flex className={"justify-end gap-x-10"}>
                 <ShopProductSortBy />
-                <ShopProductShow />
+                
               </Flex>
               {/* Shop Product part Start  */}
               <div className="mt-5">
                 <Container>
                   <div className=" relative ">
-                    <Flex className={"justify-between flex-wrap gap-y-5"}>
-                      {myProduct.map((item) => (
+                    <Link to={"/quickView"}>
+                      <Flex className={"justify-between flex-wrap gap-y-5"}>
+                        {myProduct.map((item) => (
                           <ShopProduct
-                          className={""}
-                          title={item.title}
-                          price={item.price}
-                          imgSrc={item.image}
-                          imgAlt={"Arive One"}
-                          text={"New"}
-                          brand={item.brand	}
-                          category={item.category	}
-                        />
-                      ))}
-                    </Flex>
+                            className={""}
+                            title={item.title}
+                            price={item.price}
+                            imgSrc={item.image}
+                            imgAlt={"Arive One"}
+                            text={"New"}
+                            brand={item.brand}
+                            category={item.category}
+                          />
+                        ))}
+                      </Flex>
+                    </Link>
                   </div>
                 </Container>
               </div>
