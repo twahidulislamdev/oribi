@@ -7,7 +7,7 @@ import Error from "./components/pages/Error";
 import About from "./components/pages/About";
 import Contacts from "./components/pages/Contacts";
 import QuickView from "./components/pages/QuickView";
-import DemoPage from "./components/pages/DemoPage";
+
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/quickView" element={<QuickView />} />
-          <Route path="/demoPage" element={<DemoPage />} />
+         
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
